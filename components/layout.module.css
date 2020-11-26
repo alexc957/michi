@@ -1,0 +1,44 @@
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    background: #203647;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 90px;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.link {
+    margin: 10px 5px 0px 5px;
+    text-decoration: none;
+    color: white;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.main {
+    margin-top: 100px;
+    
+   
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+.photo {
+    margin: 5px;
+    padding: 5px;
+}

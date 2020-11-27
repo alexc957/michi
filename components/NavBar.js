@@ -1,4 +1,4 @@
-import styles from './layout.module.css';
+import styles from '../styles/styles.module.css';
 import Link from 'next/link';
 
 export default function NavBar(){

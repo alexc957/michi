@@ -7,9 +7,11 @@
     top: 0;
     left: 0;
     right: 0;
+    bottom: 0;
     height: 90px;
     justify-content: center;
     align-items: center;
+    width: auto;
     
 
 }
@@ -42,3 +44,40 @@
     margin: 5px;
     padding: 5px;
 }
+
+.infoContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 25px;
+
+ 
+}
+
+.catPhoto {
+    width: 620px;
+    height: 520px;
+    
+
+}
+.photo {
+    width: 400px;
+    height: 320px;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .catPhoto {
+        width: 280px;
+        height: 225px;
+       
+    
+    }
+    .photo {
+        width: 300px;
+        height: 225px;
+
+    }
+  }
+
+ 

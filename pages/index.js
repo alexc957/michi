@@ -5,6 +5,8 @@ import photos from '../data/data';
 import Image from 'next/image'
 import styles from '../styles/styles.module.css';
 import Link from 'next/link';
+import Zoom from 'react-reveal/Zoom'
+import CatItem from '../components/CatItem';
 export default function Home({catPhotos}) {
   return (
     <Layout>
@@ -12,12 +14,7 @@ export default function Home({catPhotos}) {
         <title>Home</title>
       </Head>
      <div className={styles.container}>
-       {catPhotos.map(photo=> (
-            <Link href={`/michi/${photo.id}`}>
-              <a><img src={photo.path} key={photo.id}    className={styles.photo} /></a>
-            </Link>
-       )
-       )}
+       {catPhotos.map(photo=> <CatItem  key={photo.id} id={photo.id} path={photo.path} />)}
 
      </div>
      

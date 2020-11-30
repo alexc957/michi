@@ -1,13 +1,16 @@
 import Layout from "../../components/Layout";
 import data from '../../data/data'
 import styles from '../../styles/styles.module.css'
-
+import Bounce from 'react-reveal/Bounce';
 export default function Michi({photo}) {
 
     return <Layout>
         <div className={styles.container}>
             <div>
-                <img src={photo.path} className={styles.catPhoto}  alt={photo.name} />
+                <Bounce top>
+                   <img src={photo.path} className={styles.catPhoto}  alt={photo.name} />
+                </Bounce>
+                
             </div>
             <div className={styles.infoContainer}>
                 <p><b>id:</b> {photo.id}</p>
